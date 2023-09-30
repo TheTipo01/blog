@@ -8,8 +8,6 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "TheTipo01"
-
 paginate=3 # articles per page
 
 [params]
