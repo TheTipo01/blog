@@ -14,8 +14,8 @@ paginate=3 # articles per page
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "What go does to a mf"
-	mathjax = true # enable MathJax support
-	katex = true # enable KaTeX support
+	mathjax = false # enable MathJax support
+	katex = false # enable KaTeX support
 
 # Social Tags
 
