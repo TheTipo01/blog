@@ -1,0 +1,10 @@
+title = "Tipo's Blog"
+
+[author]
+name = "Manuel Raimo"
+image = "img/author.jpg"
+headline = "What Go does to a mf"
+bio = "Foof!"
+links = [
+  { github = "https://github.com/TheTipo01" }
+]
