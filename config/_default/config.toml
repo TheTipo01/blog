@@ -1,2 +1,2 @@
-baseURL = "https://blog.thetipo.rocks/"
-languageCode = "en"
+baseURL = "https://blog.thetipo.eu/"
+locale = "en"
