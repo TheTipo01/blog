@@ -116,5 +116,6 @@ zstd        59%       46G          79G          79G
 you can see that's quite the saving: 33G!
 
 ### Some notes about compression
-The algorithm I used in this article, zstd, is really really fast: you shouldn't need to worry about perfomance losses too much.
-But if you're really worried, you can switch `zstd` for `lzo`, as it's even more faster (but it achieve worst compression ratios).
+The algorithm I used in this article, zstd, is really fast: in it's default state, it uses a compression level of 3. You shouldn't be worrying about perfomance losses.
+
+But if you really, really think that you have a potato PC, you can switch from `zstd` to `lzo` by just changing it in the `/etc/fstab` and in the `filesystem defragment` command.
