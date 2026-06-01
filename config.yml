@@ -1,0 +1,114 @@
+baseURL: "https://blog.thetipo.eu/"
+title: Tipo's Blog
+copyright: "© Manuel Raimo"
+theme: [PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 3
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Profile
+          url: /
+          weight: 1
+        - name: Posts
+          url: posts
+          weight: 2
+    params:
+      languageAltTitle: English
+      profileMode:
+        enabled: true
+        title: Manuel Raimo
+        imageUrl: "https://git.thetipo.eu/avatars/82fd12ce7fef6d0584254dca3496f74636db6079a2a601a5a33933f0f272266f"
+        imageTitle: "Morgana from Persona 5: Dancing in Starlight"
+        subtitle: "A wannabe software dev who writes programs in go during his free time."
+        buttons:
+          - name: Blog
+            url: posts
+outputFormats:
+  llms:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - llms
+
+params:
+  env: production
+  description: "What Go does to a mf"
+  author: Manuel Raimo
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  # comments: false
+  # images: ["images/papermod-cover.png"]
+
+  socialIcons:
+    - name: github
+      title: Github
+      url: "https://github.com/TheTipo01"
+    - name: codeberg
+      title: Codeberg
+      url: "https://codeberg.org/TheTipo01"
+    - name: forgejo
+      title: Forgejo Istance
+      url: "https://git.thetipo.eu/TheTipo01"
+
+  editPost:
+    URL: "https://github.com/TheTipo01/blog/tree/master/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  assets:
+    disableHLJS: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+

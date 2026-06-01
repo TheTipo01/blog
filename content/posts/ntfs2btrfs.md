@@ -2,6 +2,8 @@
 title = 'How to use ntfs2btrfs, convert to space_cache v2 and enable BTRFS compression'
 date = 2026-05-16T14:54:43+02:00
 draft = false
+ShowToc = true
+TocOpen = true
 +++
 
 As I still get questions from my friend on how to use ntfs2btrfs, I decided to condense everything in a blog post (because I hate repeating myself too many times).
